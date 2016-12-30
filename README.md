@@ -5,7 +5,7 @@ Version 0.x
 [![Terminus v1.x Compatible](https://img.shields.io/badge/terminus-v1.x-green.svg)](https://github.com/terminus-plugin-project/terminus-site-status-plugin/tree/1.x)
 [![Terminus v0.x Compatible](https://img.shields.io/badge/terminus-v0.x-green.svg)](https://github.com/terminus-plugin-project/terminus-site-status-plugin/tree/0.x)
 
-Terminus plugin that displays the status of all available Pantheon site environments.
+Terminus plugin that displays the status of all available [Pantheon](https://www.pantheon.io) site environments.
 
 ## Installation:
 
