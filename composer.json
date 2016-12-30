@@ -1,6 +1,6 @@
 {
     "name": "terminus-plugin-project/terminus-site-status-plugin",
-    "description": "Terminus plugin that displays the status of all available Pantheon site environments.",
+    "description": "Site Status - A Terminus plugin that displays the status of all available Pantheon site environments.",
     "license": "MIT",
     "type": "terminus-plugin",
     "autoload": {

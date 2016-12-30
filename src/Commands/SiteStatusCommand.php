@@ -19,7 +19,6 @@ class SiteStatusCommand extends SiteCommand
      * @authorize
      *
      * @command site:status
-     * @aliases site:st
      *
      * @field-labels
      *     name: Name
@@ -40,22 +39,22 @@ class SiteStatusCommand extends SiteCommand
      * @option org Organization filter; "all" or organization UUID
      * @option name Name filter
      *
-     * @usage terminus env:status
+     * @usage terminus site:status
      *     Displays the list of all sites accessible to the currently logged-in user.
-     * @usage terminus env:status --team
+     * @usage terminus site:status --team
      *     Displays the list of sites of which the currently logged-in user is a member of the team.
-     * @usage terminus env:status --owner=<user>
+     * @usage terminus site:status --owner=<user>
      *     Displays the list of accessible sites owned by the user with UUID <user>.
-     * @usage terminus env:status --owner=me
+     * @usage terminus site:status --owner=me
      *     Displays the list of sites owned by the currently logged-in user.
-     * @usage terminus env:status --org=<org>
+     * @usage terminus site:status --org=<org>
      *     Displays a list of accessible sites associated with the <org> organization.
-     * @usage terminus env:status --org=all
+     * @usage terminus site:status --org=all
      *     Displays a list of accessible sites associated with any organization of which the currently logged-in is a member.
-     * @usage terminus env:status --name=<regex>
+     * @usage terminus site:status --name=<regex>
      *     Displays a list of accessible sites with a name that matches <regex>.
      */
-    public function getEnvStatus($options = ['team' => false, 'owner' => null, 'org' => null, 'name' => null,])
+    public function getSiteStatus($options = ['team' => false, 'owner' => null, 'org' => null, 'name' => null,])
     {
 
         $this->sites()->fetch(
