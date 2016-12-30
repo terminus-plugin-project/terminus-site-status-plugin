@@ -1,0 +1,15 @@
+{
+    "name": "terminus-plugin-project/terminus-site-status-plugin",
+    "description": "Terminus plugin that displays the status of all available Pantheon site environments.",
+    "homepage": "https://github.com/terminus-plugin-project/terminus-site-status-plugin",
+    "type": "terminus-plugin",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4"
+    },
+    "extra": {
+        "terminus": {
+            "compatible-version": "^0"
+        }
+    },
+}
