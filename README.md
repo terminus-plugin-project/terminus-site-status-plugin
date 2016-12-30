@@ -1,2 +1,39 @@
-# terminus-site-status-plugin
-Terminus plugin that displays the status of all available Pantheon site environments
+# Terminus Site Status Plugin
+
+[![Terminus v1.x Compatible](https://img.shields.io/badge/terminus-v1.x-green.svg)](https://github.com/terminus-plugin-project/terminus-site-status-plugin/tree/1.x)
+[![Terminus v0.x Compatible](https://img.shields.io/badge/terminus-v0.x-green.svg)](https://github.com/terminus-plugin-project/terminus-site-status-plugin/tree/0.x)
+
+Terminus plugin that displays the status of all available [Pantheon](https://www.pantheon.io) site environments.
+
+## Configuration
+
+This plugin requires no configuration to use.
+
+## Examples
+Display the status of all available site environments.
+```
+terminus site:status
+```
+
+Display the status of all dev site environments only.
+```
+terminus site:status --env=dev
+```
+
+Display the status of all site enviroments that contain 'awesome' in the name.
+```
+terminus site:status --name=awesome
+```
+
+Learn more about [Terminus](https://pantheon.io/docs/terminus/) and [Terminus Plugins](https://pantheon.io/docs/terminus/plugins/).
+
+## Installation
+For installation help, see [Manage Plugins](https://pantheon.io/docs/terminus/plugins/).
+
+```
+mkdir -p ~/.terminus/plugins
+composer create-project -d ~/.terminus/plugins terminus-plugin-project/terminus-site-status-plugin:~1
+```
+
+## Help
+Run `terminus help site:status` for help.
