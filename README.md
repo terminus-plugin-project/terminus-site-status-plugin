@@ -7,11 +7,17 @@ Version 1.x
 
 Terminus plugin that displays the status of all available [Pantheon](https://www.pantheon.io) site environments.
 
-## Configuration
+## Usage:
+```
+$ terminus site:status [--env=<env>] [--team] [--owner] [--org=<id>] [--name=<regex>] [--cached]
+```
+The associative arguments are all optional and the same filtering rules as the `terminus site:list` command apply.
 
-This plugin requires no configuration to use.
+The output will be displayed in a table format.  The `Condition` column displays whether there are pending filesystem changes.
 
-## Examples
+If the `Condition` column displays `dirty`, it means the code is out of sync with the repository.
+
+## Examples:
 Display the status of all available site environments.
 ```
 terminus site:status
@@ -29,7 +35,7 @@ terminus site:status --name=awesome
 
 Learn more about [Terminus](https://pantheon.io/docs/terminus/) and [Terminus Plugins](https://pantheon.io/docs/terminus/plugins/).
 
-## Installation
+## Installation:
 For installation help, see [Manage Plugins](https://pantheon.io/docs/terminus/plugins/).
 
 ```
@@ -37,5 +43,9 @@ mkdir -p ~/.terminus/plugins
 composer create-project -d ~/.terminus/plugins terminus-plugin-project/terminus-site-status-plugin:~1
 ```
 
-## Help
+## Configuration:
+
+This plugin requires no configuration to use.
+
+## Help:
 Run `terminus help site:status` for help.
