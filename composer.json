@@ -17,7 +17,6 @@
         "plugin"
     ],
     "support": {
-        "irc": "https://pantheon-community.slack.com/#terminus-plugins",
         "issues": "https://github.com/terminus-plugin-project/terminus-site-status-plugin/issues"
     },
     "license": "MIT",
