@@ -84,14 +84,14 @@ class SiteStatusCommand extends SiteCommand
         foreach ($sites as $site) {
             if ($environments = $this->getSite($site['name'])->getEnvironments()->serialize()) {
                 foreach ($environments as $environment) {
-                    $environment['name'] = $site['name'];
-                    $environment['framework'] = $site['framework'];
-                    $environment['service_level'] = $site['service_level'];
-                    $site_env = $site['name'] . '.' . $environment['id'];
-                    list(, $env) = $this->getSiteEnv($site_env);
-                    $diff = (array)$env->diffstat();
-                    $environment['condition'] = empty($diff) ? 'clean' : 'dirty';
                     if ($environment['initialized'] == 'true') {
+                        $environment['name'] = $site['name'];
+                        $environment['framework'] = $site['framework'];
+                        $environment['service_level'] = $site['service_level'];
+                        $site_env = $site['name'] . '.' . $environment['id'];
+                        list(, $env) = $this->getSiteEnv($site_env);
+                        $diff = (array)$env->diffstat();
+                        $environment['condition'] = empty($diff) ? 'clean' : 'dirty';
                         $status[] = $environment;
                     }
                 }

@@ -1,8 +1,29 @@
 {
     "name": "terminus-plugin-project/terminus-site-status-plugin",
     "description": "Site Status - A Terminus plugin that displays the status of all available Pantheon site environments.",
-    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ed Reel",
+            "email": "edreel@gmail.com",
+            "homepage": "https://github.com/uberhacker",
+            "role": "Developer"
+        }
+    ],
     "type": "terminus-plugin",
+    "keywords": [
+        "pantheon",
+        "terminus",
+        "status",
+        "plugin"
+    ],
+    "support": {
+        "irc": "https://pantheon-community.slack.com/#terminus-plugins",
+        "issues": "https://github.com/terminus-plugin-project/terminus-site-status-plugin/issues"
+    },
+    "license": "MIT",
+    "require": {
+        "php": "^5.5 || ^7.0"
+    },
     "autoload": {
         "psr-4": { "TerminusPluginProject\\TerminusSiteStatus\\": "src" }
     },

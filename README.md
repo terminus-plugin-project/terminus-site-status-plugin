@@ -9,7 +9,7 @@ Terminus plugin that displays the status of all available [Pantheon](https://www
 
 ## Usage:
 ```
-$ terminus site:status [--env=<env>] [--team] [--owner] [--org=<id>] [--name=<regex>] [--cached]
+$ terminus site:status [--env=<env>] [--team] [--owner] [--org=<id>] [--name=<regex>]
 ```
 The associative arguments are all optional and the same filtering rules as the `terminus site:list` command apply.
 
