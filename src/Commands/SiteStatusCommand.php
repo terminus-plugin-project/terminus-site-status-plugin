@@ -30,6 +30,7 @@ class SiteStatusCommand extends SiteCommand
      *     connection_mode: Mode
      *     php_version: PHP
      *     locked: Locked
+     *     frozen: Frozen
      *     condition: Condition
      *
      * @return RowsOfFields
@@ -88,6 +89,7 @@ class SiteStatusCommand extends SiteCommand
                         $environment['name'] = $site['name'];
                         $environment['framework'] = $site['framework'];
                         $environment['service_level'] = $site['service_level'];
+                        $environment['frozen'] = $site['frozen'];
                         $site_env = $site['name'] . '.' . $environment['id'];
                         list(, $env) = $this->getSiteEnv($site_env);
                         $diff = (array)$env->diffstat();
