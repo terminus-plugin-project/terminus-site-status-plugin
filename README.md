@@ -47,5 +47,13 @@ composer create-project -d ~/.terminus/plugins terminus-plugin-project/terminus-
 
 This plugin requires no configuration to use.
 
+## Testing:
+
+```
+cd ~/.terminus/plugins/terminus-site-status-plugin
+composer install
+composer test
+```
+
 ## Help:
 Run `terminus help site:status` for help.
