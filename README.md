@@ -10,7 +10,7 @@ Terminus plugin that displays the status of all available [Pantheon](https://www
 
 ## Usage:
 ```
-$ terminus site:status [--env=<env>] [--team] [--owner] [--org=<id>] [--name=<regex>]
+$ terminus site:status [--team] [--owner] [--org=<id>] [--name=<regex>]
 ```
 The associative arguments are all optional and the same filtering rules as the `terminus site:list` command apply.
 
@@ -22,11 +22,6 @@ If the `Condition` column displays `dirty`, it means the code is out of sync wit
 Display the status of all available site environments.
 ```
 terminus site:status
-```
-
-Display the status of all dev site environments only.
-```
-terminus site:status --env=dev
 ```
 
 Display the status of all site enviroments that contain 'awesome' in the name.
