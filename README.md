@@ -1,6 +1,6 @@
 # Terminus Site Status Plugin
 
-Version 1.x
+Version 2.x
 
 [![CircleCI](https://circleci.com/gh/terminus-plugin-project/terminus-site-status-plugin.svg?style=shield)](https://circleci.com/gh/terminus-plugin-project/terminus-site-status-plugin)
 [![Terminus v2.x Compatible](https://img.shields.io/badge/terminus-v2.x-green.svg)](https://github.com/terminus-plugin-project/terminus-site-status-plugin/tree/2.x)
