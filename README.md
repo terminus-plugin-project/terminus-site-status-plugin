@@ -3,6 +3,7 @@
 Version 1.x
 
 [![CircleCI](https://circleci.com/gh/terminus-plugin-project/terminus-site-status-plugin.svg?style=shield)](https://circleci.com/gh/terminus-plugin-project/terminus-site-status-plugin)
+[![Terminus v2.x Compatible](https://img.shields.io/badge/terminus-v2.x-green.svg)](https://github.com/terminus-plugin-project/terminus-site-status-plugin/tree/2.x)
 [![Terminus v1.x Compatible](https://img.shields.io/badge/terminus-v1.x-green.svg)](https://github.com/terminus-plugin-project/terminus-site-status-plugin/tree/1.x)
 [![Terminus v0.x Compatible](https://img.shields.io/badge/terminus-v0.x-green.svg)](https://github.com/terminus-plugin-project/terminus-site-status-plugin/tree/0.x)
 
@@ -41,7 +42,7 @@ For installation help, see [Manage Plugins](https://pantheon.io/docs/terminus/pl
 
 ```
 mkdir -p ~/.terminus/plugins
-composer create-project -d ~/.terminus/plugins terminus-plugin-project/terminus-site-status-plugin:~1
+composer create-project -d ~/.terminus/plugins terminus-plugin-project/terminus-site-status-plugin:~2
 ```
 
 ## Configuration:
