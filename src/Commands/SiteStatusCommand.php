@@ -25,7 +25,7 @@ class SiteStatusCommand extends SiteCommand
      *     id: Env
      *     domain: Domain
      *     created: Created
-     *     service_level: Service
+     *     plan_name: Plan
      *     framework: Framework
      *     connection_mode: Mode
      *     php_version: PHP
@@ -85,11 +85,13 @@ class SiteStatusCommand extends SiteCommand
         foreach ($sites as $site) {
             if ($environments = $this->getSite($site['name'])->getEnvironments()->serialize()) {
                 foreach ($environments as $environment) {
-                    if ($environment['initialized'] == 'true') {
+                    if ($environment['initialized']) {
                         $environment['name'] = $site['name'];
+                        $environment['created'] = date('Y-m-d', $environment['created']);
                         $environment['framework'] = $site['framework'];
-                        $environment['service_level'] = $site['service_level'];
-                        $environment['frozen'] = $site['frozen'];
+                        $environment['plan_name'] = $site['plan_name'];
+                        $environment['frozen'] = empty($site['frozen']) ? 'false' : 'true';
+                        $environment['locked'] = empty($environment['locked']) ? 'false' : 'true';
                         $site_env = $site['name'] . '.' . $environment['id'];
                         list(, $env) = $this->getSiteEnv($site_env);
                         $diff = (array)$env->diffstat();
